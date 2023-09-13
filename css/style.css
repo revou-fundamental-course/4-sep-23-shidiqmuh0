@@ -33,6 +33,7 @@ main {
 .container {
     background-color: white;
     margin-top: 50px;
+    margin-bottom: 50px;
     height: 90%;
     width: 90%;
     border: #eaeaea 2px solid ;
@@ -96,7 +97,7 @@ main {
 
 input[type="number"], input[type="submit"], input[type="reset"] {
     display: block;
-    margin-bottom: 10px; 
+    margin-bottom: 20px;
 }
 
 input[type="number"] {
@@ -104,7 +105,8 @@ input[type="number"] {
     width: 95%;
     height: 30px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 input[type="submit"] {
@@ -126,4 +128,28 @@ input[type="reset"] {
     height: 40px;
     font-weight: bold;
     float: right;
+}
+
+footer {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        width: 50%;
+    }
+
+    input[type="number"] {
+        width: 90%;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        display: inline-block;
+        margin: 0 10px;
+    }
 }
